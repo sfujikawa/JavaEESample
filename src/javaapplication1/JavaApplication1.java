@@ -34,7 +34,7 @@ public class JavaApplication1 {
         System.out.println("ラムダ式+メソッド参照");
         strs.forEach(System.out::println);
 
-		// ラムダ式+メソッド参照(パラメータと引き渡すメソッドの引数の型、数が同じ場合のみ)
+	// ラムダ式+メソッド参照(パラメータと引き渡すメソッドの引数の型、数が同じ場合のみ)
         // どのように処理させるかでなく、何を実現させるか　を記載するようになった
         // そもそもforEachでなにができるか
         System.out.println("forEach:");
@@ -44,11 +44,11 @@ public class JavaApplication1 {
                 System.out.println(str);
             }
         });
-		// 配列に対して　繰り返し処理させるための手法
+	// 配列に対して　繰り返し処理させるための手法
         // Java8からIterableインターフェスにforEachメソッドが追加された。
         // Consumerは関数型インターフェース
 
-		// 他のクラスのメソッド　スタティックである必要あり
+	// 他のクラスのメソッド　スタティックである必要あり
         // データベースの検索結果全件に対して、同様のしょりを行いたい。関数を引数に渡して1行で実行できる。
         // 処理速度も早い。
         System.out.println("他のクラスのスタティックメソッド1:");
