@@ -49,7 +49,7 @@ public class JavaApplication1 {
         // Consumerは関数型インターフェース
 
 	// 他のクラスのメソッド　スタティックである必要あり
-        // データベースの検索結果全件に対して、同様のしょりを行いたい。関数を引数に渡して1行で実行できる。
+        // データベースの検索結果全件に対して、同様の処理を行いたい。関数を引数に渡して1行で実行できる。
         // 処理速度も早い。
         System.out.println("他のクラスのスタティックメソッド1:");
         strs.forEach(s -> Fnc.staticDisplay(s));
@@ -59,6 +59,11 @@ public class JavaApplication1 {
         Fnc f = new Fnc();
         System.out.println("他のクラスのインスタンスメソッド1:");
         strs.forEach(s -> f.display(s));
+        
+        
+        //次
+        //CDI,EJBを利用してEEっぽくする。
+        
 
     }
 
